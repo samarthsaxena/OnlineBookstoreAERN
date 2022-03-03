@@ -24,6 +24,8 @@ app.use(express.json());
 
 app.use("/", routes);
 
-app.listen(PORT, () => {
+// Because heroku assigns the PORT dynamically.
+app.listen(process.env.PORT || PORT, () => {
     console.log('App is running on PORT:' + PORT);
 });
+
