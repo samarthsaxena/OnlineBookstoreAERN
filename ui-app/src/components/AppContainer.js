@@ -16,8 +16,8 @@ const AppContainer = () => {
         <Switch>
             <Route exact path={'/'} component={BookListPage} ></Route>
 
-            // adding : as prefix to id makes it dynamically changable path
-            // Based on the id of any book we must return the details.
+            {/* adding : as prefix to id makes it dynamically changable path
+             Based on the id of any book we must return the details. */}
             <Route exact path={'/bookdetails/:id'} component={BookDetailsPage} ></Route>
         </Switch>
     </div>
